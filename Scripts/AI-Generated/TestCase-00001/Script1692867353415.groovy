@@ -1,6 +1,6 @@
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
 'Initialize test session: Open browser and set view port'
@@ -119,9 +119,79 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/cart.html(?:#.*)?(?:\\?.*)?$', true)
 
 WebUI.enhancedClick(testObj)
 
-'step 7: Add visual checkpoint at Page_checkout-step-one_html'
+'step 7: At Page_checkout-step-one_html input on input_object'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TestCase-00000_visual_checkpoint')
+testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_object')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.setText(testObj, var_1_input_object)
+
+'step 8: At Page_checkout-step-one_html input on input_object'
+
+testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_object_1')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.setText(testObj, var_2_input_object_1)
+
+'step 9: At Page_checkout-step-one_html input on input_object'
+
+testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_object_2')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.setText(testObj, var_3_input_object_2)
+
+'step 10: At Page_checkout-step-one_html click on input_object --> navigate to Page_checkout-step-two_html'
+
+testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_object_3')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.enhancedClick(testObj)
+
+'step 11: At Page_checkout-step-two_html click on button_finish --> navigate to Page_checkout-complete_html'
+
+testObj = findTestObject('Object Repository/Page_checkout-step-two_html/button_finish')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-two.html(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.enhancedClick(testObj)
+
+'step 12: Add visual checkpoint at Page_checkout-complete_html'
+
+WebUI.takeFullPageScreenshotAsCheckpoint('TestCase-00001_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
