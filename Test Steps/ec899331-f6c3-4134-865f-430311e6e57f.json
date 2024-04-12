@@ -1,8 +1,0 @@
-{
-    "steps": [
-        "step 1: Navigate to Page_home",
-        "step 2: Login at Page_home --> navigate to Page_inventory_html",
-        "step 3: At Page_inventory_html click on hyperlink_item_4_img_link --> navigate to Page_inventory-item_html",
-        "step 4: Add visual checkpoint at Page_inventory-item_html"
-    ]
-}

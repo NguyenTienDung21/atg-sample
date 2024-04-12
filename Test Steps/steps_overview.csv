@@ -1,17 +1,17 @@
-Flow ID,Test Steps,Flow Priority
-2,"step 1: Navigate to Page_home
-step 2: Login at Page_home --> navigate to Page_inventory_html
-step 3: At Page_inventory_html click on hyperlink_item_4_img_link --> navigate to Page_inventory-item_html
-step 4: At Page_inventory-item_html click on button_back_to_products --> navigate to Page_inventory_html
-step 5: At Page_inventory_html click on hyperlink_object --> navigate to Page_cart_html
-step 6: At Page_cart_html click on button_checkout --> navigate to Page_checkout-step-one_html
-step 7: At Page_checkout-step-one_html input on input_first_name
-step 8: At Page_checkout-step-one_html input on input_last_name
-step 9: At Page_checkout-step-one_html input on input_postal_code
-step 10: At Page_checkout-step-one_html click on input_continue --> navigate to Page_checkout-step-two_html
-step 11: At Page_checkout-step-two_html click on button_finish --> navigate to Page_checkout-complete_html
-step 12: Add visual checkpoint at Page_checkout-complete_html",High
-1,"step 1: Navigate to Page_home
-step 2: Login at Page_home --> navigate to Page_inventory_html
-step 3: At Page_inventory_html click on hyperlink_item_4_img_link --> navigate to Page_inventory-item_html
-step 4: Add visual checkpoint at Page_inventory-item_html",Low
+Flow ID,Name,Description,Test Steps,Flow Priority
+1,Flow 1,,"Step 1: Navigate to https://www.saucedemo.com/
+Step 2: Click on div 'login credentials'
+Step 3: Login -> Navigate to page 'inventory.html'
+Step 4: Click on link 'item 0 title link' -> Navigate to page 'inventory-item.html'
+Step 5: Click on button 'add-to-cart-sauce-labs-bike-light'
+Step 6: Click on link '1' -> Navigate to page 'cart.html'
+Step 7: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
+Step 8: Click on input field 'firstName'
+Step 9: Enter input value in input field 'firstName'
+Step 10: Click on input field 'lastName'
+Step 11: Enter input value in input field 'lastName'
+Step 12: Click on input field 'postalCode'
+Step 13: Enter input value in input field 'postalCode'
+Step 14: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
+Step 15: Take full page screenshot as checkpoint
+",High
