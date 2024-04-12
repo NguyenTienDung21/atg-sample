@@ -1,0 +1,17 @@
+Flow ID,Name,Description,Test Steps,Flow Priority
+1,Flow 1,,"Step 1: Navigate to https://www.saucedemo.com/
+Step 2: Click on div 'login credentials'
+Step 3: Login -> Navigate to page 'inventory.html'
+Step 4: Click on link 'item 0 title link' -> Navigate to page 'inventory-item.html'
+Step 5: Click on button 'add-to-cart-sauce-labs-bike-light'
+Step 6: Click on link '1' -> Navigate to page 'cart.html'
+Step 7: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
+Step 8: Click on input field 'firstName'
+Step 9: Enter input value in input field 'firstName'
+Step 10: Click on input field 'lastName'
+Step 11: Enter input value in input field 'lastName'
+Step 12: Click on input field 'postalCode'
+Step 13: Enter input value in input field 'postalCode'
+Step 14: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'
+Step 15: Take full page screenshot as checkpoint
+",High
