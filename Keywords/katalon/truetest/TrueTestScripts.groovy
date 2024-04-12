@@ -2,8 +2,8 @@ package katalon.truetest
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.util.KeywordUtil
-import internal.GlobalVariable
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import internal.GlobalVariable
 
 public class TrueTestScripts {
     public static void login() {
